@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/dashboard.css">
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Desafio 3</title>
+</head>
+<body>
+    <div class="modalBackground sumir" id="modalEdit">
+        <div class="modal">
+            <button class="closeButton" id="closeButtonEdit">X</button>
+            <h1 class="modalH1">Editar contato</h1>
+            <form id="modalFormEdit">
+                <label for="name">Nome:</label>
+                <input type="text" name="name">
+                <label for="email">Email:</label>
+                <input type="email" name="email">
+                <label for="phone">Celular/Telefone:</label>
+                <input type="text" name="phone">
+                <button type="submit">Editar</button>
+            </form>
+        </div>
+    </div>
+    <div class="modalBackground sumir" id="modalBack">
+        <div class="modal">
+            <button class="closeButton" id="closeButton">X</button>
+            <h1 class="modalH1">Adicionar contato</h1>
+            <form id="modalForm">
+                <label for="name">Nome:</label>
+                <input type="text" name="name">
+                <label for="email">Email:</label>
+                <input type="email" name="email">
+                <label for="phone">Celular/Telefone:</label>
+                <input type="text" name="phone">
+                <button type="submit">Adicionar</button>
+            </form>
+        </div>
+    </div>
+    <div class="header">
+        <h1 class="title"><a class="titleLink" href="../index.html">Contact.io</a></h1>
+        <div class="botoes">
+            <button class="headerButton" onclick={location.reload()}>Seus contatos</button>
+            <button class="headerButton" id="seuPerfil">Seu perfil</button>
+        </div>
+    </div>
+    <main class="divLista">
+        <div class="ulHeader">
+            <div class="addContact">
+                <h1 class="tituloLista">Adicionar contatos</h1>
+                <button class="addButton" id="addButton">+</button>
+            </div>
+            <button class="headerButton" id="relatorio">Imprimir relatório</button>
+        </div>
+        <ul class="lista" id="lista">
+            <!----<li class="card">
+                <img class="cardImg" src="../sources/1000_F_331699188_lRpvqxO5QRtwOM05gR50ImaaJgBx68vi.jpg">
+                <div class="cardInfo">
+                    <h2>Arthur Ribeiro Goncalves</h2>   
+                    <span>ribeirogon.arthur@gmail.com</span>
+                    <button>Remover contato</button>
+                </div>
+            </li>
+        </ul>-->
+    </main>
+    <script type="module" src="../scripts/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/perfil.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Desafio 3</title>
+</head>
+<body>
+    <div class="modalBackground sumir" id="modalBack">
+        <div class="modal">
+            <button class="closeButton" id="closeButton">X</button>
+            <h1 class="modalH1">Editar Perfil</h1>
+            <form id="modalForm">
+                <label for="name">Nome completo:</label>
+                <input type="text" name="name">
+                <label for="email" >Email:</label>
+                <input type="email" name="email">
+                <label for="phone">Celular/Telefone:</label>
+                <input type="text" name="phone">
+                <label for="password">Password:</label>
+                <input type="password" name="password">
+                <label for="confirm">Confirm Password:</label>
+                <input name="confirm" type="password">
+                <button type="submit">Editar</button>
+            </form>
+        </div>
+    </div>
+    <div class="header">
+        <h1 class="title"><a class="titleLink" href="../index.html">Contact.io</a></h1>
+        <div class="botoes">
+            <button class="headerButton" id="seusContatos">Seus contatos</button>
+            <button class="headerButton">Seu perfil</button>
+        </div>
+    </div>
+    <main class="divLista">
+        <div class="imgContainer" id="imgContainer">
+            <img class="perfilImg" src="../sources/1000_F_331699188_lRpvqxO5QRtwOM05gR50ImaaJgBx68vi.jpg">
+        </div>
+        <div class="infoContainer" id="infoContainer">   
+        </div>
+        <button class="mudarSenha" id="openModal">Editar Perfil</button>
+    </main>
+    <script type="module" src="../scripts/perfil.js"></script>
+</body>
+</html>
